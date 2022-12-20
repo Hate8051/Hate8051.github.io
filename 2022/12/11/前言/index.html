@@ -18,20 +18,20 @@
   <meta name="author" content="leonard">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这是摘要">
+    <meta name="description" content="学习 golang 前言">
 <meta property="og:type" content="article">
 <meta property="og:title" content="My First Blog HelloWorld">
-<meta property="og:url" content="https://hate8051.github.io/2022/11/30/My-First-Blog-HelloWorld/index.html">
+<meta property="og:url" content="https://hate8051.github.io/2022/12/11/%E5%89%8D%E8%A8%80/index.html">
 <meta property="og:site_name" content="leonard_blog">
-<meta property="og:description" content="这是摘要">
+<meta property="og:description" content="学习 golang 前言">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://hate8051.github.io/img/helloworld.jpg">
-<meta property="article:published_time" content="2022-11-30T11:05:36.000Z">
-<meta property="article:modified_time" content="2022-12-02T06:54:47.679Z">
+<meta property="og:image" content="https://hate8051.github.io/img/golang-gopher.png">
+<meta property="article:published_time" content="2022-12-11T13:23:36.000Z">
+<meta property="article:modified_time" content="2022-12-20T02:34:01.376Z">
 <meta property="article:author" content="leonard">
-<meta property="article:tag" content="freedom">
+<meta property="article:tag" content="golang">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://hate8051.github.io/img/helloworld.jpg">
+<meta name="twitter:image" content="https://hate8051.github.io/img/golang-gopher.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -208,7 +208,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/1.png') no-repeat center center; background-size: cover;">
+     style="background: url('/imgolang-gopher.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -225,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-30 19:05" pubdate>
-          2022年11月30日 晚上
+        <time datetime="2022-12-11 21:23" pubdate>
+          2022年12月11日 晚上
         </time>
       </span>
     
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          33 字
+          847 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          1 分钟
+          8 分钟
         
       </span>
     
@@ -291,9 +291,80 @@
             
               <div class="markdown-body">
                 
-                <p>Hello World![^1]</p>
-<p><img src="/img/helloworld.jpg" srcset="/img/loading.gif" lazyload alt="helloworld"></p>
-<p>[^1] helloworld参考资料</p>
+                <h2 id="Hello-Golang"><a href="#Hello-Golang" class="headerlink" title="Hello Golang"></a>Hello Golang</h2><p><img src="/img/golang-gopher.png" srcset="/img/loading.gif" lazyload alt="golang-gopher"></p>
+<h3 id="golang-简介"><a href="#golang-简介" class="headerlink" title="golang 简介"></a>golang 简介</h3><p>​    Go 语言（又称Golang）是 Google 的 Robert Griesemer，Rob Pike 及 Ken Thompson  开发的一种<strong>静态强类型</strong>、编译型语言。功能上：内存安全，GC（垃圾回收），<strong>结构形态</strong>，<strong>CSP-style 并发计算</strong>。</p>
+<h3 id="golang-特点"><a href="#golang-特点" class="headerlink" title="golang 特点"></a>golang 特点</h3><p>​    背靠大厂，可靠；<strong>天然支持并发（最显著特点）</strong>；语法简单易上手；<strong>内置 runtime，支持垃圾回收</strong>；可直接编译成机器码，不依赖其他库；标准库丰富；跨平台编译。</p>
+<h3 id="go语言的应用领域"><a href="#go语言的应用领域" class="headerlink" title="go语言的应用领域"></a>go语言的应用领域</h3><ol>
+<li>服务器编程</li>
+<li>开发云平台</li>
+<li>区块链</li>
+<li>分布式系统</li>
+<li>网络编程</li>
+</ol>
+<h3 id="哪些公司在用go语言"><a href="#哪些公司在用go语言" class="headerlink" title="哪些公司在用go语言"></a>哪些公司在用go语言</h3><ul>
+<li>Google<ul>
+<li>k8s</li>
+</ul>
+</li>
+<li>Facebook</li>
+<li><strong>腾讯</strong><ul>
+<li>蓝鲸平台</li>
+<li>容器技术</li>
+</ul>
+</li>
+<li><strong>字节跳动</strong></li>
+<li><strong>B站</strong></li>
+<li>百度</li>
+<li><strong>京东</strong><ul>
+<li>消息推送系统</li>
+<li>云存储</li>
+<li>京东商城</li>
+</ul>
+</li>
+<li>小米<ul>
+<li>运维监控系统</li>
+<li>小米互娱</li>
+<li>小米商城</li>
+<li>小米视频</li>
+<li>小米生态链</li>
+</ul>
+</li>
+</ul>
+<h2 id="golang-语言开发环境的搭建"><a href="#golang-语言开发环境的搭建" class="headerlink" title="golang 语言开发环境的搭建"></a>golang 语言开发环境的搭建</h2><p>​    分别在 windows 和 linux 平台搭建go 1.19</p>
+<p><img src="/img/1671333560197.png" srcset="/img/loading.gif" lazyload alt="win10"></p>
+<p><img src="/img/1671333620049.png" srcset="/img/loading.gif" lazyload alt="linux"></p>
+<h2 id="go-开发工具"><a href="#go-开发工具" class="headerlink" title="go 开发工具"></a>go 开发工具</h2><p>​    当然 goland ！！！</p>
+<h2 id="go-常用命令"><a href="#go-常用命令" class="headerlink" title="go 常用命令"></a>go 常用命令</h2><ul>
+<li>go help : 可显示所有的go 命令以及响应命令的功能简介</li>
+<li>build：编译包和依赖</li>
+<li>clean：移除对象文件</li>
+<li>doc：显示包或者符号的文档</li>
+<li>env：go环境信息</li>
+<li>bug：启动错误报告</li>
+<li>fix：运行go tool fix</li>
+<li>fmt：运行 gofmt 进行格式化</li>
+<li>generate：从processing source 生成go文件</li>
+<li>get：下载并安装包和依赖</li>
+<li>install：编译和安装包和依赖</li>
+<li>list：列出包</li>
+<li>run：编译并运行go程序</li>
+<li>test：运行测试</li>
+<li>tool：运行go提供的工具</li>
+<li>version：显示go的版本</li>
+<li>vet：运行 go tool vet</li>
+</ul>
+<h2 id="如何编写-go-代码"><a href="#如何编写-go-代码" class="headerlink" title="如何编写 go 代码"></a>如何编写 go 代码</h2><h3 id="代码组织"><a href="#代码组织" class="headerlink" title="代码组织"></a>代码组织</h3><p>go 应用使用<strong>包和模块</strong>来组织代码，包对应文件系统就是文件夹，模块就是<strong>xxx.go</strong>的go源文件。一个包中可以有多个模块，或者多个子包。</p>
+<h3 id="go项目管理工具"><a href="#go项目管理工具" class="headerlink" title="go项目管理工具"></a>go项目管理工具</h3><blockquote>
+<p>早期的go项目使用gopath来管理项目，不方便而且容易出错。</p>
+</blockquote>
+<p>从 golang 1.11开始使用gomod管理项目。当然还有第三方模块 如：govendor</p>
+<h3 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h3><ol>
+<li>创建项目</li>
+<li>初始化项目 go mod init xxx</li>
+<li>创建包</li>
+<li>创建模块</li>
+<li>相互调用</li>
+</ol>
 
                 
               </div>
@@ -312,7 +383,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%85%B6%E4%BB%96/" class="category-chain-item">其他</a>
+  <a href="/categories/study/" class="category-chain-item">study</a>
   
   
 
@@ -327,7 +398,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/freedom/">#freedom</a>
+        <a href="/tags/golang/">#golang</a>
       
     </div>
   
@@ -340,7 +411,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>My First Blog HelloWorld</div>
-      <div>https://hate8051.github.io/2022/11/30/My-First-Blog-HelloWorld/</div>
+      <div>https://hate8051.github.io/2022/12/11/前言/</div>
     </div>
     <div class="license-meta">
       
@@ -352,7 +423,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月30日</div>
+          <div>2022年12月11日</div>
         </div>
       
       
@@ -384,15 +455,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/12/11/%E5%89%8D%E8%A8%80/" title="My First Blog HelloWorld">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">My First Blog HelloWorld</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/11/30/My-First-Blog-HelloWorld/" title="My First Blog HelloWorld">
+                        <span class="hidden-mobile">My First Blog HelloWorld</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
